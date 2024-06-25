@@ -1,0 +1,217 @@
+From aeb12eea40876481fbb5a366747ff94d1f28a218 Mon Sep 17 00:00:00 2001
+From: jordanagha <jordan.agha1@gmail.com>
+Date: Sat, 22 Jun 2024 17:11:33 +0100
+Subject: [PATCH] task 1 complete
+
+---
+ .spyproject/config/codestyle.ini                 |   8 ++++++++
+ .../config/defaults/defaults-codestyle-0.2.0.ini |   5 +++++
+ .../config/defaults/defaults-encoding-0.2.0.ini  |   3 +++
+ .../config/defaults/defaults-vcs-0.2.0.ini       |   4 ++++
+ .../config/defaults/defaults-workspace-0.2.0.ini |   6 ++++++
+ .spyproject/config/encoding.ini                  |   6 ++++++
+ .spyproject/config/vcs.ini                       |   7 +++++++
+ .spyproject/config/workspace.ini                 |  12 ++++++++++++
+ Pipfile                                          |  12 ++++++++++++
+ __pycache__/client3.cpython-311.pyc              | Bin 0 -> 1783 bytes
+ client3.py                                       |  11 ++++++++---
+ 11 files changed, 71 insertions(+), 3 deletions(-)
+ create mode 100644 .spyproject/config/codestyle.ini
+ create mode 100644 .spyproject/config/defaults/defaults-codestyle-0.2.0.ini
+ create mode 100644 .spyproject/config/defaults/defaults-encoding-0.2.0.ini
+ create mode 100644 .spyproject/config/defaults/defaults-vcs-0.2.0.ini
+ create mode 100644 .spyproject/config/defaults/defaults-workspace-0.2.0.ini
+ create mode 100644 .spyproject/config/encoding.ini
+ create mode 100644 .spyproject/config/vcs.ini
+ create mode 100644 .spyproject/config/workspace.ini
+ create mode 100644 Pipfile
+ create mode 100644 __pycache__/client3.cpython-311.pyc
+
+diff --git a/.spyproject/config/codestyle.ini b/.spyproject/config/codestyle.ini
+new file mode 100644
+index 0000000..0f54b4c
+--- /dev/null
++++ b/.spyproject/config/codestyle.ini
+@@ -0,0 +1,8 @@
++[codestyle]
++indentation = True
++edge_line = True
++edge_line_columns = 79
++
++[main]
++version = 0.2.0
++
+diff --git a/.spyproject/config/defaults/defaults-codestyle-0.2.0.ini b/.spyproject/config/defaults/defaults-codestyle-0.2.0.ini
+new file mode 100644
+index 0000000..0b95e5c
+--- /dev/null
++++ b/.spyproject/config/defaults/defaults-codestyle-0.2.0.ini
+@@ -0,0 +1,5 @@
++[codestyle]
++indentation = True
++edge_line = True
++edge_line_columns = 79
++
+diff --git a/.spyproject/config/defaults/defaults-encoding-0.2.0.ini b/.spyproject/config/defaults/defaults-encoding-0.2.0.ini
+new file mode 100644
+index 0000000..0ce193c
+--- /dev/null
++++ b/.spyproject/config/defaults/defaults-encoding-0.2.0.ini
+@@ -0,0 +1,3 @@
++[encoding]
++text_encoding = utf-8
++
+diff --git a/.spyproject/config/defaults/defaults-vcs-0.2.0.ini b/.spyproject/config/defaults/defaults-vcs-0.2.0.ini
+new file mode 100644
+index 0000000..ee25483
+--- /dev/null
++++ b/.spyproject/config/defaults/defaults-vcs-0.2.0.ini
+@@ -0,0 +1,4 @@
++[vcs]
++use_version_control = False
++version_control_system = 
++
+diff --git a/.spyproject/config/defaults/defaults-workspace-0.2.0.ini b/.spyproject/config/defaults/defaults-workspace-0.2.0.ini
+new file mode 100644
+index 0000000..2a73ab7
+--- /dev/null
++++ b/.spyproject/config/defaults/defaults-workspace-0.2.0.ini
+@@ -0,0 +1,6 @@
++[workspace]
++restore_data_on_startup = True
++save_data_on_exit = True
++save_history = True
++save_non_project_files = False
++
+diff --git a/.spyproject/config/encoding.ini b/.spyproject/config/encoding.ini
+new file mode 100644
+index 0000000..a17aced
+--- /dev/null
++++ b/.spyproject/config/encoding.ini
+@@ -0,0 +1,6 @@
++[encoding]
++text_encoding = utf-8
++
++[main]
++version = 0.2.0
++
+diff --git a/.spyproject/config/vcs.ini b/.spyproject/config/vcs.ini
+new file mode 100644
+index 0000000..fd66eae
+--- /dev/null
++++ b/.spyproject/config/vcs.ini
+@@ -0,0 +1,7 @@
++[vcs]
++use_version_control = False
++version_control_system = 
++
++[main]
++version = 0.2.0
++
+diff --git a/.spyproject/config/workspace.ini b/.spyproject/config/workspace.ini
+new file mode 100644
+index 0000000..4d9540a
+--- /dev/null
++++ b/.spyproject/config/workspace.ini
+@@ -0,0 +1,12 @@
++[workspace]
++restore_data_on_startup = True
++save_data_on_exit = True
++save_history = True
++save_non_project_files = False
++project_type = 'empty-project-type'
++recent_files = []
++
++[main]
++version = 0.2.0
++recent_files = []
++
+diff --git a/Pipfile b/Pipfile
+new file mode 100644
+index 0000000..e21bf6d
+--- /dev/null
++++ b/Pipfile
+@@ -0,0 +1,12 @@
++[[source]]
++url = "https://pypi.org/simple"
++verify_ssl = true
++name = "pypi"
++
++[packages]
++python-dateutil = "==2.8.2"
++
++[dev-packages]
++
++[requires]
++python_version = "3.11"
+diff --git a/__pycache__/client3.cpython-311.pyc b/__pycache__/client3.cpython-311.pyc
+new file mode 100644
+index 0000000000000000000000000000000000000000..7aa7a3f2572bbbbc33c46d168f465a6ea476c914
+GIT binary patch
+literal 1783
+zcmaJB&r2g$_`PH%nV3Y4Ytp*r@LI4n)~HdI+TgY<H7$D)-CwLjx?!Ao>ck|Iotbpm
+zG(rwNq~IZig$=X?p~YIfNH4ob3;PEo64)?M5PI5Mz@9wydlRE(q5FP(@B7~Set+N0
+z?|y$Dg0a78t}l8J`iBwS;Xg-C4>3Z|k%APQL1O2`BDQIV=u{jcr#MAk;l4+rOW^^!
+zsi3&F986w+;Xu>_yN~jFpyvQ~XY^8w=$qd}FYuwXuggK5>8=lGx4(OP^`zYHz*V}7
+zgC3l|v;@}&-6zy*x0l)-ykNV6?7c%?40sR?fcF#P5Lk85p<azi4k7WHI4lOm5WK&q
+zxaqZ@up-c5fF2qI*hfPEy}x*RB{ACh#Fp>@bkh(G?LkHl?5r~9iZ1k4EFkf#g6~3|
+z?xKkQ4P#m=ez0kp`S|p7Mw6w?re>J&`I-5d>Bj}CKm9^gZhp6|{tKCsFR}$v;4^Z<
+zKCJ?Hjy$LYI!6HSjBRXQ;f6QI<(uNX#Czk}cDyCUU2?ud%2{%3b0u7Il$<4QorB2u
+z;-_R;*OY=xiIm9@bCZ%Br3zKZw^F7+4Pt6!gXX9%nZQ95$&~V%nlp*T8>S|2S#DFy
+zr`A-(;`6#H(+({eTM=yW>lsZlBfP~wE@&pzSt=|K@TNMf9$@RBI^-W2JOIMR*)2Jq
+zyl+t5NZyjEo?O)ALYC%CBbkRgEhi<{HC@`E(R4m5M~x>mYJ#e0EGcJHV4IuDKec=t
+z)LaB_mzlRZ>wUs(ECVQ`6K<j93sgVeSt=*~9t>7#?RGQt(e9IGXu2^t(;S>B-~ONL
+zmM>UNw7i4WNNshWuY03)E_w<&k$lliK(Lb9MHc{JMYr3?QT&j6O-%y1R5hZl6FUtl
+ziAXu+9A6`EnCu@Y;;`K3&s}8AU?vFB*+*>&5Z@i9NFN4r0=B_^Kb_dTzDi7IU%4fu
+zQdvpOrBX%r3M+y_iXI}FWE{#6FS;fPBraYQCOh`yXE;(6Y_(*}h`eucX-K!_(!oP5
+zYxNiOOh#Rs(kZmOVOp*ZZSgDj6L(fEykzIuc8D3yNm-goS)2;Bw|LO8K`orJc<2hn
+zu-siOZqTCTDVTw(W+l_&bSf#9%WfJ&hhHhOTSsT{>0Sm{yVwl}r46tP7OS0?GhrbM
+z?VO>X>*H|8l4;xn*mh!!+Y<=;%3d~G$X~W+3kB=l)pjAzWSNJ97s|Npa^tBsx&XsY
+z>~EtB(2qD@rFiTdsXIqb{DI27>R5HGhJPG?HvYq-okwjX@N+h(;8tL?I{fT<?W>=c
+zUWaFo!?TAsUM&2%aO6L7z4HGx@M@qjx7?gtZiH8w;g#3n2gl(Djqt-}_+cZk+6=5#
+zTqnYpt>9=IIXnvPz)GSOyLlLXNgJ`nW^A$Ho2n$LpVid;AT)L*QAxZkuz94iSzi&)
+zS5m5X*3eqRCpUd^-Ciexzrt72wfWloZessNV>H$rjWzmX4Pmw^%+~GI4kGS4#M<V%
+If!SIA4+clOF8}}l
+
+literal 0
+HcmV?d00001
+
+diff --git a/client3.py b/client3.py
+index 3fc09b7..f7bb6fa 100644
+--- a/client3.py
++++ b/client3.py
+@@ -35,14 +35,17 @@ def getDataPoint(quote):
+     stock = quote['stock']
+     bid_price = float(quote['top_bid']['price'])
+     ask_price = float(quote['top_ask']['price'])
+-    price = bid_price
++    price = (bid_price+ask_price)/2
+     return stock, bid_price, ask_price, price
+ 
+ 
+ def getRatio(price_a, price_b):
+     """ Get ratio of price_a and price_b """
+     """ ------------- Update this function ------------- """
+-    return 1
++    if (price_b == 0):
++        # avoid return ZeroDivisionError
++        return
++    return price_a/price_b
+ 
+ 
+ # Main
+@@ -52,8 +55,10 @@ if __name__ == "__main__":
+         quotes = json.loads(urllib.request.urlopen(QUERY.format(random.random())).read())
+ 
+         """ ----------- Update to get the ratio --------------- """
++        prices = {}
+         for quote in quotes:
+             stock, bid_price, ask_price, price = getDataPoint(quote)
++            prices[stock] = price
+             print("Quoted %s at (bid:%s, ask:%s, price:%s)" % (stock, bid_price, ask_price, price))
+ 
+-        print("Ratio %s" % getRatio(price, price))
++        print("Ratio %s" % getRatio(prices['ABC'], prices['DEF']))
+-- 
+2.45.1.windows.1
+
